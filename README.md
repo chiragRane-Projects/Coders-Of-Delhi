@@ -1,23 +1,32 @@
-📁 Coders of Delhi
-Coders of Delhi is a JSON-based, non-UI social media platform made by coders, for coders. It's a pure Python project with a focus on data science logic, simulating core social networking features like friend suggestions through mutual connections.
+# Coders of Delhi 🧑‍💻
 
-Think of it as the backend brain of a coding-centric social network—no fancy UI, just raw, functional data processing.
+Coders of Delhi is a non-UI, JSON-based social media backend built entirely in Python. It simulates friend suggestions using mutual connection logic — think “People You May Know,” but for coders.
 
-🔍 Features
-Users and friendships are stored in a simple data.json file
+## 📌 Features
 
-Suggests "People You May Know" based on mutual friends
+- Pure Python (no external libraries)
+- JSON file-based data storage
+- Suggests users based on mutual friends
+- Simple, beginner-friendly logic
+- Built while learning from Code With Harry’s Data Science course
 
-Fast and efficient friend graph lookup using Python dictionaries and sets
+Each user has:
 
-Lightweight, easy to understand, and beginner-friendly
+-An id
+-A list of friends (referencing other user IDs)
+-Liked Pages
 
-💡 Inspiration
-This project was created as part of my learning journey while following Code With Harry's Data Science Course. It's a hands-on application of Python, JSON manipulation, and basic recommendation algorithms.
+🧠 Logic Overview
+1. *People You May Know*
+-Checks direct friends
+-Finds mutual friends
+-Ranks suggestions by mutual count
 
-⚙️ Technologies
-Python (Core logic)
+2. *Pages You Might Like*
+-Compares liked pages with other users
+-Suggests new pages based on overlap
+-Ranks pages by number of shared interests
 
-JSON (Data storage)
-
-No external libraries required
+📚 Credits
+Built while following Code With Harry’s Data Science course.
+Inspired by the logic behind real-world social networks.
